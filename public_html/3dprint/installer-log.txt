@@ -1,0 +1,164 @@
+********************************************************************************
+DUPLICATOR INSTALL-LOG
+STEP1 START @ 09:46:00
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+VERSION:	0.5.12
+PHP:		5.5.12 | SAPI: apache2handler
+SERVER:		Apache/2.4.9 (Win32) PHP/5.5.12
+DOC ROOT:	H:/wamp/www/3dprint
+DOC ROOT 755:	true
+LOG FILE 644:	true
+BUILD NAME:	20150826_3dprintingserviceinaustrali_
+REQUEST URL:	http://localhost/3dprint/installer.php
+
+********************************************************************************
+ARCHIVE SETUP
+********************************************************************************
+NAME:	20150826_3dprintingserviceinaustrali__archive.zip
+SIZE:	755.87MB
+ZIP:	Enabled (ZipArchive Support)
+EXTRACTING
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 11052
+    [filename] => H:\wamp\www\3dprint\20150826_3dprintingserviceinaustrali__archive.zip
+    [comment] => 
+)
+COMPLETE: true
+
+WEB SERVER CONFIGURATION FILE RESET:
+- Backup of .htaccess/web.config made to .orig
+- Reset of .htaccess/web.config files
+
+UPDATED FILES:
+- SQL FILE:  'H:/wamp/www/3dprint/installer-data.sql'
+- WP-CONFIG: 'H:/wamp/www/3dprint/wp-config.php'
+
+ARCHIVE RUNTIME: 156.0371 sec.
+
+
+********************************************************************************
+DATABASE-ROUTINES
+********************************************************************************
+--------------------------------------
+SERVER ENVIROMENT
+--------------------------------------
+MYSQL VERSION:	5.6.17
+TIMEOUT:	5000
+MAXPACK:	1048576
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+ERRORS FOUND:	0
+DROP TABLE:	removed (0) tables
+QUERIES RAN:	49210
+
+wp_commentmeta: (1563)
+wp_comments: (1561)
+wp_duplicator_packages: (1)
+wp_layerslider: (2)
+wp_links: (7)
+wp_options: (1242)
+wp_postmeta: (14500)
+wp_posts: (2074)
+wp_revslider_css: (49)
+wp_revslider_layer_animations: (0)
+wp_revslider_settings: (0)
+wp_revslider_sliders: (3)
+wp_revslider_slides: (12)
+wp_revslider_static_slides: (0)
+wp_snp_stats: (56)
+wp_term_relationships: (94)
+wp_term_taxonomy: (75)
+wp_terms: (74)
+wp_usermeta: (8834)
+wp_users: (363)
+wp_woocommerce_attribute_taxonomies: (0)
+wp_woocommerce_downloadable_product_permissions: (0)
+wp_woocommerce_order_itemmeta: (16937)
+wp_woocommerce_order_items: (1726)
+wp_woocommerce_tax_rate_locations: (0)
+wp_woocommerce_tax_rates: (2)
+wp_woocommerce_termmeta: (4)
+wp_wpclone: (1)
+Removed '736' cache/transient rows
+
+SECTION RUNTIME: 32.1045 sec.
+
+********************************************************************************
+STEP1 COMPLETE @ 09:49:09 - TOTAL RUNTIME: 188.7890 sec.
+********************************************************************************
+
+
+
+********************************************************************************
+DUPLICATOR INSTALL-LOG
+STEP2 START @ 09:54:57
+NOTICE: Do not post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	latin1
+CHARSET CLIENT:	 utf8 
+
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+wp_commentmeta~ (1563)
+wp_comments~ (1561)
+wp_duplicator_packages^ (0)
+wp_layerslider~ (2)
+wp_links~ (7)
+wp_options~ (504)
+wp_postmeta~ (14500)
+wp_posts~ (2074)
+wp_revslider_css~ (49)
+wp_revslider_layer_animations^ (0)
+wp_revslider_settings^ (0)
+wp_revslider_sliders~ (3)
+wp_revslider_slides~ (12)
+wp_revslider_static_slides^ (0)
+wp_snp_stats^ (56)
+wp_term_relationships~ (94)
+wp_term_taxonomy~ (75)
+wp_terms~ (74)
+wp_usermeta~ (8834)
+wp_users~ (363)
+wp_woocommerce_attribute_taxonomies^ (0)
+wp_woocommerce_downloadable_product_permissions^ (0)
+wp_woocommerce_order_itemmeta~ (16937)
+wp_woocommerce_order_items~ (1726)
+wp_woocommerce_tax_rate_locations^ (0)
+wp_woocommerce_tax_rates~ (2)
+wp_woocommerce_termmeta~ (4)
+wp_wpclone~ (1)
+--------------------------------------
+SEARCH1:	'http://3dprint-au.com' 
+REPLACE1:	'http://localhost/3dprint' 
+SEARCH2:	'/var/www/html/' 
+REPLACE2:	'H:/wamp/www/3dprint/' 
+SCANNED:	Tables:28 | Rows:48385 | Cells:252498 
+UPDATED:	Tables:4 | Rows:2845 |Cells:3279 
+ERRORS:		0 
+RUNTIME:	35.702800 sec
+
+********************************************************************************
+START FINAL CLEANUP: 09:55:32
+********************************************************************************
+UPDATE `wp_blogs` SET domain = 'localhost' WHERE domain = '3dprint-au.com'
+
+--------------------------------------
+WARNINGS
+--------------------------------------
+No Warnings Found
+
+
+WEB SERVER CONFIGURATION FILE BASIC SETUP:
+created basic .htaccess file.  If using IIS web.config this process will need to be done manually.
+********************************************************************************
+STEP 2 COMPLETE @ 09:55:32 - TOTAL RUNTIME: 35.7959 sec.
+********************************************************************************
